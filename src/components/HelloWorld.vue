@@ -1,17 +1,9 @@
 <template>
   <div class="title">Hypocrisy of the United States</div>
-  <div>
-    Invasion of Iraq I
-  </div>
-  <div>
-    Invasion of Afganistan
-  </div>
-  <div>
-    Invasion of Libya
-  </div>
-  <div>
-    Invasion of Iraq II
-  </div>
+  <h4>
+    Why is the West allowed to bomb other with impunity, while the rest of us
+    face condemnation for defending ourselves?
+  </h4>
 </template>
 
 <script lang="ts">
@@ -28,7 +20,7 @@ export default defineComponent({
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .title {
-  color:  #a75f1b;
+  color: #a75f1b;
   font-size: 5em;
 }
 </style>
