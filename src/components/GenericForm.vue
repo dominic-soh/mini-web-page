@@ -2,11 +2,11 @@
   <v-form>
     <h2>Contact Form</h2>
     <div>
-      <span class="form-name">Name</span>
+      <span class="form-name"><slot name="first-line"></slot></span>
       <input v-model="inputValue" class="form-input" />
     </div>
     <div>
-      <span class="form-name">Email</span>
+      <span class="form-name"><slot name="second-line"></slot></span>
       <input v-model="inputValue" class="form-input" />
     </div>
     <textarea

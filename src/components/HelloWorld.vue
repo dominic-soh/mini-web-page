@@ -1,7 +1,7 @@
 <template>
   <div class="title">Hypocrisy of the United States</div>
   <h4>
-    Why is the West allowed to bomb other with impunity, while the rest of us
+    Why is the West allowed to bomb others with impunity, while the rest of us
     face condemnation for defending ourselves?
   </h4>
 </template>
