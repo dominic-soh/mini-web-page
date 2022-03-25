@@ -9,15 +9,6 @@
       <span class="form-name"><slot name="second-line"></slot></span>
       <input v-model="inputValue" class="form-input" />
     </div>
-    <textarea
-      v-model="text"
-      style="width: 12rem"
-      height="100"
-      :append-icon="text == '' ? 'person' : ''"
-      class="ml-5"
-      placeholder="Share your thoughts!"
-    />
-    <button @click="submitForm">Submit</button>
   </v-form>
 </template>
 <script lang="ts">

@@ -2,6 +2,15 @@
 # yarn lockfile v1
 
 
+"@achrinza/node-ipc@9.2.2":
+  version "9.2.2"
+  resolved "https://registry.yarnpkg.com/@achrinza/node-ipc/-/node-ipc-9.2.2.tgz#ae1b5d3d6a9362034eea60c8d946b93893c2e4ec"
+  integrity sha512-b90U39dx0cU6emsOvy5hxU4ApNXnE3+Tuo8XQZfiKTGelDwpMwBVgBP7QX6dGTcJgu/miyJuNJ/2naFBliNWEw==
+  dependencies:
+    "@node-ipc/js-queue" "2.0.3"
+    event-pubsub "4.3.0"
+    js-message "1.0.7"
+
 "@ampproject/remapping@^2.0.0":
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/@ampproject/remapping/-/remapping-2.1.1.tgz#7922fb0817bf3166d8d9e258c57477e3fd1c3610"
@@ -1155,6 +1164,13 @@
     call-me-maybe "^1.0.1"
     glob-to-regexp "^0.3.0"
 
+"@node-ipc/js-queue@2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@node-ipc/js-queue/-/js-queue-2.0.3.tgz#ac7fe33d766fa53e233ef8fedaf3443a01c5a4cd"
+  integrity sha512-fL1wpr8hhD5gT2dA1qifeVaoDFlQR5es8tFuKqjHX+kdOtdNHnxkVZbtIrR2rxnMFvehkjaZRNV2H/gPXlb0hw==
+  dependencies:
+    easy-stack "1.0.1"
+
 "@nodelib/fs.scandir@2.1.5":
   version "2.1.5"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz#7619c2eb21b25483f6d167548b4cfd5a7488c3d5"
@@ -1681,13 +1697,13 @@
   dependencies:
     "@vue/cli-shared-utils" "^4.5.15"
 
-"@vue/cli-plugin-typescript@~4.5.0":
-  version "4.5.15"
-  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-typescript/-/cli-plugin-typescript-4.5.15.tgz#14ba0ddcf3b94e73148ff84ac904fbc5346c14d1"
-  integrity sha512-g2HDBwWBboTzNvVrS+w4Ctl7CCErboTlx7PyQrXgY+7uGdPVUT9PWuv4DjaZhosSk7WI3qSIpruCBIkdHX5bwQ==
+"@vue/cli-plugin-typescript@~4.5.15":
+  version "4.5.17"
+  resolved "https://registry.yarnpkg.com/@vue/cli-plugin-typescript/-/cli-plugin-typescript-4.5.17.tgz#61860bd18524f693294a122181553b23d55afafe"
+  integrity sha512-7JeJ913td1xbNKcVO71clTEXWGq43/6FPLhph3kBEdUrMqANd1ENb4jFZ/Rl277YTFipV08WpzQ12d1ZtqwvEQ==
   dependencies:
     "@types/webpack-env" "^1.15.2"
-    "@vue/cli-shared-utils" "^4.5.15"
+    "@vue/cli-shared-utils" "^4.5.17"
     cache-loader "^4.1.0"
     fork-ts-checker-webpack-plugin "^3.1.1"
     globby "^9.2.0"
@@ -1799,6 +1815,24 @@
     launch-editor "^2.2.1"
     lru-cache "^5.1.1"
     node-ipc "^9.1.1"
+    open "^6.3.0"
+    ora "^3.4.0"
+    read-pkg "^5.1.1"
+    request "^2.88.2"
+    semver "^6.1.0"
+    strip-ansi "^6.0.0"
+
+"@vue/cli-shared-utils@^4.5.17":
+  version "4.5.17"
+  resolved "https://registry.yarnpkg.com/@vue/cli-shared-utils/-/cli-shared-utils-4.5.17.tgz#bb4aac8b816036cf5c0adf3af3cc1cb9c425501e"
+  integrity sha512-VoFNdxvTW4vZu3ne+j1Mf7mU99J2SAoRVn9XPrsouTUUJablglM8DASk7Ixhsh6ymyL/W9EADQFR6Pgj8Ujjuw==
+  dependencies:
+    "@achrinza/node-ipc" "9.2.2"
+    "@hapi/joi" "^15.0.1"
+    chalk "^2.4.2"
+    execa "^1.0.0"
+    launch-editor "^2.2.1"
+    lru-cache "^5.1.1"
     open "^6.3.0"
     ora "^3.4.0"
     read-pkg "^5.1.1"
@@ -4192,7 +4226,7 @@ duplexify@^3.4.2, duplexify@^3.6.0:
     readable-stream "^2.0.0"
     stream-shift "^1.0.0"
 
-easy-stack@^1.0.1:
+easy-stack@1.0.1, easy-stack@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/easy-stack/-/easy-stack-1.0.1.tgz#8afe4264626988cabb11f3c704ccd0c835411066"
   integrity sha512-wK2sCs4feiiJeFXn3zvY0p41mdU5VUgbgs1rNsc/y5ngFUijdWd+iIN8eoyuZHKB8xN6BL4PdWmzqFmxNg6V2w==
@@ -10518,6 +10552,11 @@ vm-browserify@^1.0.1:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vm-browserify/-/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha512-2ham8XPWTONajOR0ohOKOHXkm3+gaBmGut3SRuu75xLd/RRaY6vqgh8NBYYk7+RW3u5AtzPQZG8F10LHkl0lAQ==
+
+vue-class-component@^8.0.0-0:
+  version "8.0.0-rc.1"
+  resolved "https://registry.yarnpkg.com/vue-class-component/-/vue-class-component-8.0.0-rc.1.tgz#db692cd97656eb9a08206c03d0b7398cdb1d9420"
+  integrity sha512-w1nMzsT/UdbDAXKqhwTmSoyuJzUXKrxLE77PCFVuC6syr8acdFDAq116xgvZh9UCuV0h+rlCtxXolr3Hi3HyPQ==
 
 vue-eslint-parser@^7.0.0, vue-eslint-parser@^7.10.0:
   version "7.11.0"
