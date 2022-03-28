@@ -1,4 +1,6 @@
 # dominic-soh
+Basic webapp.
+All content are just for fun and do not represent my personal views. 
 
 ## Project setup
 ```
