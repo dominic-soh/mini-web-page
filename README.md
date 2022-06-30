@@ -1,6 +1,7 @@
 # dominic-soh
 Basic webapp.
 All content are just for fun and do not represent my personal views. 
+https://dominic-soh.github.io/mini-web-page/#/
 
 ## Project setup
 ```
